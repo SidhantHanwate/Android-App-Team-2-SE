@@ -19,9 +19,11 @@ public class MainActivity extends AppCompatActivity {
     bottomNavigation = findViewById(R.id.bottomNav);
 
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home));
-        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_search));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_person));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_settings));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_auto));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_action));
+        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_consume));
+        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.ic_solar));
+        bottomNavigation.add(new MeowBottomNavigation.Model(6, R.drawable.ic_person));
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
@@ -29,14 +31,18 @@ public class MainActivity extends AppCompatActivity {
 
                 Fragment fragment = null;
 
-                if(item.getId()==4) {
-                        fragment = new SettingsFragment();
+                if(item.getId()==6) {
+                    fragment = new UserFragment();
+                } else if(item.getId()==5) {
+                    fragment = new SolarFragment();
+                } else if(item.getId()==4) {
+                    fragment = new ConsumeFragment();
                 } else if(item.getId()==3) {
-                        fragment = new UserFragment();
+                    fragment = new ActionFragment();
                 } else if(item.getId()==2) {
-                        fragment = new SearchFragment();
+                    fragment = new AutoFragment();
                 } else {
-                        fragment = new HomeFragment();
+                    fragment = new HomeFragment();
                 }
                 loadFragment(fragment);
             }
@@ -57,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bottomNavigation.setCount(3, "10");
+//        bottomNavigation.setCount(3, "10");
     }
 
     private void loadFragment(Fragment fragment) {
