@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment"
-    android:background="@color/teal_200">
+    android:background="#B56A6A">
 
     <TextView
         android:layout_width="wrap_content"

@@ -8,23 +8,25 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class RecyclerActionAdapter extends RecyclerView.Adapter<RecyclerActionAdapter.ViewHolder>{
     Context context;
-    ArrayList<ContactModel> arrAction;
-    private static RecyclerActionAdapter.Listener listener;
-    RecyclerActionAdapter(Context context, ArrayList<ContactModel> arrAction){
+    public static ArrayList<ContactModel> arrAction;
+    private ItemClickListener clickListener;
+    //    private static RecyclerActionAdapter.Listener listener;
+    RecyclerActionAdapter(Context context, ArrayList<ContactModel> arrAction, ItemClickListener clickListener   ){
         this.context= context;
         this.arrAction= arrAction;
-
+        this.clickListener=clickListener;
     }
 
-    public static void setListener(RecyclerActionAdapter.Listener lis) {
-        listener=lis;
-    }
+//    public static void setListener(RecyclerActionAdapter.Listener lis) {
+//        listener=lis;
+//    }
 
     @NonNull
     @Override
@@ -37,8 +39,16 @@ public class RecyclerActionAdapter extends RecyclerView.Adapter<RecyclerActionAd
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.imgAction.setImageResource(arrAction.get(position).img);
-        holder.txtName.setText(arrAction.get(position).name);
+        int _pos = holder.getAdapterPosition();
+        holder.imgAction.setImageResource(arrAction.get(_pos).img);
+        holder.txtName.setText(arrAction.get(_pos).name);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickListener.onItemClick(arrAction.get(_pos),_pos);
+            }
+        });
     }
 
     @Override
@@ -55,7 +65,7 @@ public class RecyclerActionAdapter extends RecyclerView.Adapter<RecyclerActionAd
             imgAction = itemView.findViewById(R.id.Img1);
         }
     }
-   public static interface Listener{
-        public void onClick(int position);
+   public interface ItemClickListener{
+        public void onItemClick(ContactModel contactModel,int _pos);
     }
 }

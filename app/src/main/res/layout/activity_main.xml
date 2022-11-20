@@ -20,11 +20,11 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:mbn_circleColor="@color/yellow"
+        app:mbn_circleColor="#FFFFFF"
         app:mbn_selectedIconColor="#ff6f00"
-        app:mbn_backgroundBottomColor="#ffff01"
+        app:mbn_backgroundBottomColor="#354DCD"
         app:mbn_countBackgroundColor="#ff6f00"
-        app:mbn_defaultIconColor="@color/black"
-        android:background="@color/purple_500"/>
+        app:mbn_defaultIconColor="#FFFFFF"
+        android:background="#99A2D3"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
