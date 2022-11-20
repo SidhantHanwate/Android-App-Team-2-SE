@@ -10,4 +10,13 @@
     <color name="blue">#FF03A9F4</color>
     <color name="green">#18DD22</color>
     <color name="yellow">#F3F338</color>
+    <color name="dark_background">#2C2E63</color>
+    <color name="text_or_icon">#FFFFFF</color>
+    <color name="secondary_text">#9CA1B5</color>
+    <color name="dashboard_item_1">#01CD98</color>
+    <color name="dashboard_item_2">#5351FC</color>
+    <color name="dashboard_item_3">#E64000</color>
+    <color name="dashboard_item_4">#F68900</color>
+    <color name="background">#2C2E43</color>
+
 </resources>
