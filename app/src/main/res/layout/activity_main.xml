@@ -26,6 +26,5 @@
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_defaultIconColor="@color/black"
         android:background="@color/purple_500"/>
-        >
 
 </androidx.constraintlayout.widget.ConstraintLayout>

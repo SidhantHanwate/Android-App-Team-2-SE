@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="action1">Reduce your heating and cooling</string>
+    <string name="action2">Drive less</string>
+    <string name="action3">Eat a plant-based meal</string>
+    <string name="action4">Take the train instead of a plane</string>
+    <string name="action5">Cut your food waste</string>
+    <string name="action6">Try Zero-waste Fashion</string>
+    <string name="action7">Buy Local</string>
+    <string name="action8">Speak up</string>
+    <string name="action9">Buy energy from renewable sources</string>
+    <string name="action10">Switch to an electric vehicle</string>
+    <string name="title_activity_action1">Action1Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_action2">Action2Activity</string>
+    <string name="time">Time(in hrs)</string>
+    <string name="name">Name</string>
+    <string name="appl1">LED</string>
+    <string name="t1">12</string>
+    <string name="watts">Watts</string>
+    <string name="w1">100</string>
 </resources>

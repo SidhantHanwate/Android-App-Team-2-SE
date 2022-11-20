@@ -1,22 +1,34 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     MeowBottomNavigation bottomNavigation;
+//    RecyclerView recyclerView = findViewById(R.id.recyclerViewActions);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-    bottomNavigation = findViewById(R.id.bottomNav);
+//        replaceFragement(new ActionFragment());
+
+        bottomNavigation = findViewById(R.id.bottomNav);
+//        bottomNavigation.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), android.R.color.transparent));
 
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home));
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_auto));
@@ -65,6 +77,13 @@ public class MainActivity extends AppCompatActivity {
 
 //        bottomNavigation.setCount(3, "10");
     }
+
+//    private void replaceFragement(Fragment actionFragment) {
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.recyclerViewActions,actionFragment);
+//        fragmentTransaction.commit();
+//    }
 
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager()
