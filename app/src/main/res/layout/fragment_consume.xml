@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="6996 kWh"
+            android:text="3500 kWh"
             android:textSize="30dp" />
 
         <TextView
