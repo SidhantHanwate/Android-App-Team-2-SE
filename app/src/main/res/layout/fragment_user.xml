@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_12sdp"
-        android:text="@string/username"
+        android:text="Ada Lovelace"
         android:textColor="@color/text_or_icon"
         android:textSize="@dimen/_18sdp"
         android:textStyle="bold"
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textSubTitle"
         android:layout_marginTop="@dimen/_4sdp"
-        android:text="@string/user_subtitle"
+        android:text="Level 2 (The Awakening)"
         android:textColor="@color/secondary_text"
         android:textSize="@dimen/_11sdp"
         android:textStyle="italic"
@@ -161,7 +161,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/item1_text"
+                android:text="You saved"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"
                 />
@@ -170,16 +170,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:text="bla bla"
+                android:text="5.1"
                 android:textColor="@color/text_or_icon"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="29dp"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:text="some text"
+                android:layout_marginTop="16.90dp"
+                android:text="Kg CO2"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"/>
         </LinearLayout>
@@ -202,7 +202,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/item2_text"
+                android:text="You saved"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"
                 />
@@ -211,16 +211,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:text="bla bla"
+                android:text="1034"
                 android:textColor="@color/text_or_icon"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="29dp"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:text="some text"
+                android:text="L water"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"/>
         </LinearLayout>
@@ -243,7 +243,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/item3_text"
+                android:text="Saved"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"
                 />
@@ -252,16 +252,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:text="bla bla"
+                android:text="1016"
                 android:textColor="@color/text_or_icon"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="29dp"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:text="some text"
+                android:text="kWh electricity"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"/>
         </LinearLayout>
@@ -284,7 +284,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/item4_text"
+                android:text="You took"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"
                 />
@@ -293,16 +293,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:text="bla bla"
+                android:text="4"
                 android:textColor="@color/text_or_icon"
-                android:textSize="@dimen/_16sdp"
+                android:textSize="29dp"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:text="some text"
+                android:text="climate actions"
                 android:textColor="@color/text_or_icon"
                 android:textSize="@dimen/_13sdp"/>
         </LinearLayout>
